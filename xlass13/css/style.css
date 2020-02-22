@@ -1,0 +1,300 @@
+/* for all css must write! */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box !important;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Prisma';
+    src: url('../fonts/Prisma.eot'), url('../fonts/Prisma.otf'), url('../fonts/Prisma.svg'), url('../fonts/Prisma.ttf'), url('../fonts/Prisma.woff');
+}
+
+.primary-bg {
+    background-color: #4eba82;
+}
+
+.primary-color {
+    color: #4eba82;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 1250px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/* for header css */
+
+.logo {
+    width: 25%;
+}
+
+.nav {
+    width: 75%;
+}
+
+.nav li {
+    display: inline;
+    line-height: 50px;
+}
+
+.nav li a {
+    color: #000;
+    padding: 15px 20px;
+}
+
+.nav li a:hover {
+    background-color: grey;
+    color: #4eba82;
+    ;
+}
+
+
+/* for slider css */
+
+.slider {
+    background-image: url('../images/slider.jpg');
+    height: 450px;
+    background-size: cover;
+    text-align: center;
+}
+
+.slider h1 {
+    font-family: 'Prisma';
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 14px;
+    padding-top: 100px;
+}
+
+.slider p {
+    font-family: 'Prisma';
+    font-size: 3em;
+    color: white;
+}
+
+
+/* for content major services section css */
+
+.col-3 {
+    width: 33%;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.mr-1 {
+    margin: 0.5%;
+}
+
+.img-head {
+    padding: 10px;
+}
+
+.major-services {
+    margin-top: -50px;
+}
+
+
+/* for welcome section css */
+
+.welcome {
+    text-align: center;
+    background-color: #efefef;
+    padding: 15px 0;
+}
+
+.col-4 {
+    width: 25%;
+    padding: 0.5%;
+    box-sizing: border-box;
+}
+
+.welcome h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+pt-5 {
+    padding-top: 5px;
+}
+
+pb-5 {
+    padding-bottom: 5px;
+}
+
+
+/* for current topic css section */
+
+.current-topic {
+    padding: 20px 0;
+}
+
+.current-topic h2 {
+    padding-bottom: 10px;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.button a {
+    padding: 5px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+/* resources ul li section css */
+
+.btn a {
+    color: darkgrey;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.RESOURCES-PROGRAM h3 {
+    border-bottom: #48535c dashed 1px;
+    padding: 10PX;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.RESOURCES-PROGRAM {
+    background-color: #efefef;
+}
+
+.RESOURCES-PROGRAM ul li a {
+    color: #48535c;
+    font-size: 1em;
+    line-height: 25px;
+    display: inline-block;
+}
+
+.RESOURCES-PROGRAM ul li a:hover {
+    color: #4eba82;
+}
+
+.RESOURCES-PROGRAM .col-4 {
+    padding: 10px 20px;
+}
+
+.number {
+    font-size: 2em;
+}
+
+.colord {
+    color: #b2abb1;
+}
+
+
+/* designlogo css --- */
+
+.Designlogo {
+    padding: 40px 20px;
+}
+
+.col-6 {
+    box-sizing: border-box;
+    width: 16%;
+}
+
+
+/* secondlast section backgroundoimages */
+
+.ENVIRONMENTAL-MANAGEMENT-AGENCY {
+    background-image: url('../images/slider.jpg');
+    height: 290px;
+    background-size: cover;
+}
+
+.ENVIRONMENTAL-MANAGEMENT-AGENCY img {
+    float: left;
+    padding-left: 60px;
+}
+
+.ENVIRONMENTAL-MANAGEMENT-AGENCY h3 {
+    text-align: center;
+    color: #fff;
+    padding: 60px;
+    font-size: 2em;
+    text-align: left;
+}
+
+.ENVIRONMENTAL-MANAGEMENT-AGENCY p {
+    color: #fff;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.btnview a {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4eba82;
+}
+
+.footer {
+    height: 70px;
+    background-color: #efefef;
+}
+
+.footer p {
+    padding: 20px;
+}
+
+.footer p a {
+    color: #4eba82;
+}
+
+
+/* media query for nav hidden &column Responsive*/
+
+@media (max-width:990px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .col-3 {
+        width: 100%;
+    }
+    .mr-1 {
+        margin: 0;
+    }
+    .col-4 {
+        width: 99%;
+    }
+}
