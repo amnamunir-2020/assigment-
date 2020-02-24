@@ -1,0 +1,31 @@
+Template Link
+------------------
+https://www.online.owi.ie/html/motorepair/
+
+Template Video
+---------------
+https://www.youtube.com/playlist?list=PLtkJNEFelCCf4MTHGBthruLUFlPkoGBdg
+
+
+
+ANIMATE.CSS
+https://daneden.github.io/animate.css/
+
+
+
+mynameismattieu WOW.JS
+
+https://www.delac.io/wow/
+https://github.com/matthieua/WOW/blob/master/dist/wow.min.js
+
+
+
+JQUERY:
+
+https://jquery.com/download/
+https://code.jquery.com/jquery-3.4.1.min.js
+
+
+BOOTSTRAP DOWNLOAD:---js/css
+
+FONTAWESOME DOWNLOAD---ss
