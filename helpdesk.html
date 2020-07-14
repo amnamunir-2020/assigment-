@@ -40,6 +40,23 @@ background-color:black;   forbulb
 	.purple{
 		color: purple;
 	}
+	#example{
+		background-color: aliceblue;
+	}
+	.btn{
+		background-color: black;
+		color: white;
+	}
+	
+	.cart{
+		height: 300px;
+		width: 600px;
+		background-color: indigo;
+		margin-left: 30px;
+	}
+	.main{
+		display:flex;
+	}
 	</style>
 <body>
 <!--
@@ -99,6 +116,7 @@ background-color:black;   forbulb
 	
 -->
 	
+<!--
 	<p id="para">
 		An operating system is system software that manages computer hardware, software resources, and provides common services for computer programs.Linux is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.
 	</p>
@@ -112,9 +130,45 @@ background-color:black;   forbulb
 		An operating system is system software that manages computer hardware, software resources, and provides common services for computer programs.Linux is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.
 	</p>
 	
+-->
+<!--
+	<button id="example">Example</button>
 	
+	<button onClick="disable()">Disable</button>
 	
+-->
+<!--DOM==============================================	-->
+<!--
+	<p>This is 1</p>
+		<p>This is 1</p>
+		<p>This is 1</p>
+		<p>This is 1</p>
 	
+	<button onClick="getElement()">Get</button>
+-->
+<!--	ADD TO CARD-->
+	<div class="main">
+	<div>
+		<img id="product" width="100" src="https://www.impericon.com/360x520x85/media/catalog/product/n/i/nike_tanjun_blackwhite_girlshoes_lg.jpg">
+		<h5 id="name">Branded Shoes</h5>
+		<span id="price">RS:9000$</span>
+		<br>
+		<button class="btn" onClick="addToCart()">Add To Cart</button>
+		
+		
+	</div>
+		
+	<div id="cart" class="cart">
+		
+		<img id="cart-product" width="100" />
+		<h5 id="cart-name"></h5>
+		<span id="cart-price"></span>
+		
+		
+		</div>
+		
+		
+		</div>
 	
 	
 </body>
