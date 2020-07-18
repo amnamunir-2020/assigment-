@@ -100,9 +100,52 @@
 //}
 
 
-function getElement(){
-	var element=document.getElementsByTagName("p")
-	console.log(element)
-}
+//function getElement(){
+//	var element=document.getElementsByTagName("p")
+//	console.log(element)
+//}
+//
+//getElement()
 
-getElement()
+
+//function disable(){
+//	var btn=document.getElementById("example");
+//	btn.disabled=true;
+//}
+
+//function getElement(){
+//	var element=document.getElementsByTagName('p')
+//	console.log(element)
+//}
+
+//function addToCart(){
+//	var img=document.getElementById("product")
+//	var name=document.getElementById("name")
+//     var price=document.getElementById("price")
+//	 var cartimg=document.getElementById("cart-product")
+//	var cartname=document.getElementById("cart-name")
+//     var cartprice=document.getElementById("cart-price")
+//	 cartimg.src=img.src
+//	 cartname.innerHTML=name.innerHTML
+//	 cartprice.innerHTML=price.innerHTML
+//	
+	 
+	 
+	 
+//    console.log(img.src)
+//	console.log(name.innerHTML)
+//	console.log(price.innerHTML)
+
+//}
+
+
+//-------------------------Helpdesk5------------------------
+
+
+//MODAL IMAGE..............................................
+function showImage(e){
+	console.log(e)
+	var modalImage=document.getElementById("modalImage")
+	modalImage.src=e.src
+	
+}
