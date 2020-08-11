@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>xlass20</title>
+</head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+	
+/*	MAARIJ CSS*/
+/*
+	fieldset{
+		border-radius: 20px;
+		background: lightblue;
+		text-align: justify;
+	}
+*/
+	
+	
+/*
+	SIRAAJ CSS
+	.wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+	}
+	.quiz{
+		display: grid;
+		height: 600px;
+		width: 800px;
+		grid-template-rows: 60px auto;
+		
+	}
+	
+	.header{
+		background: rgba(36,131,100,1.00);
+		display: flex;
+		justify-content: space-around;
+	}
+	.body{
+		background-color: antiquewhite;
+		padding: 50px;
+	}
+	.option{
+		list-style-type: none;
+		background: white;
+		width:50% ;
+		margin-bottom: 15px;
+		padding: 15px 20px;
+		
+	}
+	.btn{
+		background: white;
+		color: black;
+		padding: 15px 20px;
+	}
+	.active{
+		background: black;
+		color: red;
+		
+	}
+	
+*/
+	
+	
+/*	HASNAIN CSS*/
+	* {
+    margin: 0;
+    padding: 0;
+}
+
+	.card-text {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.card-text:hover,
+.active {
+    background: black;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+	
+	
+	</style>
+<body onLoad="ShowQuestion(0)">
+<!--	MAARIJ QUIZ APP-->
+<!--
+	<h1>Quiz Application About General Knowledge:</h1>
+	<div>
+	<fieldset>
+		<p>What is 2+15</p>
+		<input id="m1" name="mathematics" type="radio"/>23<br>
+		<input id="m2" name="mathematics" type="radio"/>17<br>
+        <input id="m3"  name="mathematics" type="radio"/>20<br>
+	     <input id="m4" name="mathematics" type="radio"/>4<br>
+		</fieldset>
+	</div>
+	<br><br>
+	<div>
+	<fieldset>
+		<p>What is the name of SouthAfrica President?</p>
+		<input id="e1" name="english" type="radio"/>TAYYAB BURDAGAN<br>
+		<input id="e2" name="english" type="radio"/>IMRAN KHAN<br>
+        <input id="e3"  name="english" type="radio"/>DONALD TRUMP<br>
+	     <input id="e4" name="english" type="radio"/>Cyril Ramaphosa<br>
+		</fieldset>
+	</div>
+<br><br>
+<div>
+	<fieldset>
+		<p>What is the name of Pakistan President?</p>
+		<input id="en1" name="GN" type="radio"/>TAYYAB BURDAGAN<br>
+		<input id="en2" name="GN" type="radio"/>IMRAN KHAN<br>
+        <input id="en3"  name="GN" type="radio"/>DONALD TRUMP<br>
+	     <input id="en4" name="GN" type="radio"/>Cyril Ramaphossa<br>
+		</fieldset>
+	</div>
+	<br>
+	<button onClick="check()" >Result</button>
+	
+-->
+	
+	
+<!--	SIRAAJ QUIZ APP-==============================================->-->
+
+<!--
+	<div class="wrapper">
+		<div class="quiz">
+			<div class="header">
+			<h3>Welconme</h3>
+				<span>00:00</span>
+			
+			</div>
+			<div class="body">
+				<div id="question">
+				<h1>WHAT IS Name?</h1>
+					<ul class="list">
+					<li class="option">Ahsan</li>
+						<li  class="option">Ahmer</li>
+						<li  class="option">Sami</li>
+						<li  class="option">Maher</li>
+					</ul>
+				</div>
+				<button class="btn" onClick="next()">Next Question</button>
+			</div>
+			
+			
+		</div>
+	
+	</div>
+-->
+	
+	
+<!--	HAsNAIN  QUIZ APP-->
+	
+	<div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-6">
+                  <div class="card mx-auto" style="max-width: 80%;">
+<!--                    <h5 class="card-header bg-theme ">START QUIZ <script>document.write(sessionStorage.getItem("name").toUpperCase());</script> <span id="timer" class="float-right">02:00</span></h5>-->
+                    <div class="card-body">
+                        <h5 class="card-title mb-4" id="QuestionsAll">Q1. The correct answer of the equation, 2 + 2 is</h5>
+                        <p class="card-text OptionsAll " onClick="putActive(this)" > a)option1</p>
+                        <p class="card-text OptionsAll " onClick="putActive(this)" >b)option2</p>
+                        <p class="card-text OptionsAll " onClick="putActive(this)" >c) option3</p>
+                        <p class="card-text OptionsAll " onClick="putActive(this)">d) option4</p>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="#" class="btn btn-dark float-right " id="nextQ" onclick="nextQuestion()">Next Question</a>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+	
+</body>
+	<script src="app20.js"></script>
+</html>
