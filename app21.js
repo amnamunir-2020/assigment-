@@ -43,9 +43,14 @@
 //function Student(name,seat){
 //	this.name=name;
 //	this.seat=seat;
+
 //	
 //}
+//function mai prototype
 //Student.prototype.getName=function()
+//propert mai bi prototype laga saktai hai
+//Student.prototype.school="academia"
+
 //{
 //	return this.name
 //}
@@ -85,17 +90,63 @@
 
 //another method for check properties>>>>>>>>>>>>>>>>>>>>>>>>>>>hasOwnProperty
 
-var student3={
-	name:"mujtaba",
-roll:444,
-	school:"welfare Academy"
-} 
-
-
-for(var wherePropertyCheck in student3){
-	//all properties  in object get
-	console.log(wherePropertyCheck,student3.hasOwnProperty("school"))
-}
+//var student3={
+//	name:"mujtaba",
+//roll:444,
+//	school:"welfare Academy"
+//} 
+//
+//
+//for(var wherePropertyCheck in student3){
+//	//all properties  in object get
+//	console.log(wherePropertyCheck,student3.hasOwnProperty("school"))
+//}
 
 //differnce two  method jo property object ka hissa nahi hai wo bi return krrdaigii yaano proto istarh ki  in keyword yaa just variable kai throgh or hasown property wo apni property bylaigi................................................
 
+
+//var student3={
+//	name:"mujtaba",
+//roll:444,
+//	school:"welfare Academy"
+//} 
+//	
+//	console.log(student3)
+//console.log("constructor" in student3)  //in hai in tou sub btadeta hai object ki all  property
+//console.log(student3.hasOwnProperty("roll"))
+//console.log(student3.hasOwnProperty("constructor"))   //just own property check
+
+///$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$DATABSE START$$$$$$$$$$$$$$$$$$$$$$$$$$$4
+function saveData(){
+	var name=document.getElementById("name");
+	var roll=document.getElementById("roll");
+	
+	
+	var student={
+		name:name.value,
+		roll:roll.value
+		
+	}
+	//console.log(firebase)
+	//student name ka object ho or usmai value ghous hai
+	firebase.database().ref('student').set("ghous")
+	
+	//console.log(firebase.database)
+	//call function database  and .ref reference btata hai
+	//'/'mean object kai under .ref('/')
+	//.set databse mai data save kernai kailia .set
+	
+	//
+	//firebase.database().ref('student').set(student)
+		//.ref('student').set(student)
+	
+}
+
+
+
+
+//????????????????????????????Check for connect databse firebase??????????????//////
+//console.log(firebase)
+
+//database ka if link hatado tou undefined 
+//console.log(firebase.database)

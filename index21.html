@@ -3,9 +3,49 @@
 <head>
 <meta charset="utf-8">
 <title>xlass21</title>
+	<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+	
+	
+
+	
+	<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAHMrlRXzksGzATO7o1Osg1fqf3JKcI1d8",
+    authDomain: "webandmobile-assignment.firebaseapp.com",
+    databaseURL: "https://webandmobile-assignment.firebaseio.com",
+    projectId: "webandmobile-assignment",
+    storageBucket: "webandmobile-assignment.appspot.com",
+    messagingSenderId: "926216495670",
+    appId: "1:926216495670:web:fb76878829fc02dc9a2e97",
+    measurementId: "G-5LTCTMQDK8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+</script>
+	
+	
+	
 </head>
 
 <body>
+	
+	
+<!--	DATABSE FIREBASE NO SQL-->
+	<div>
+	<input id="name" type="text" placeholder="Name">
+		<br>
+		<input id="roll" type="text" placeholder="Roll No">
+		<br>
+		
+		<button onClick="saveData()">Save Button</button>
+	</div>
+<!--	FIRST HANDLE DATA IN JS-->
+	
+	
+	
 	
 </body>
 	<script src="app21.js"></script>
