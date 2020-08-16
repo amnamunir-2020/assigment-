@@ -121,15 +121,53 @@ function saveData(){
 	var name=document.getElementById("name");
 	var roll=document.getElementById("roll");
 	
-	
+	var key=firebase.database().ref('student').push().key
 	var student={
 		name:name.value,
-		roll:roll.value
-		
+		roll:roll.value,
+		key:key
+		//object kai under bi key var key=firebase.database().ref('student').push().key firebase.database().ref('student/' +key).set(student)
 	}
+	
+	firebase.database().ref('student/' +key).set(student)
+	//object banyaegai uskai under key data save kerdaigai
+	//var key=firebase.database().ref('student/' +key).set(student)
+	
+	//firebase sai key unique 
+//	var key=firebase.database().ref('student').push().key
+//	console.log(key)
+//	
+	//random generate key
+//	var key= Math.random()*2345677;
+//	firebase.database().ref('student/'+key.toFixed()).set(student)
+//	
+	
+	//console.log(key)
+	
+	//just add kerna seekha hai
 	//console.log(firebase)
 	//student name ka object ho or usmai value ghous hai
-	firebase.database().ref('student').set("ghous")
+	
+	//firebase.database().ref('student').set(student)
+	//firebase.database().ref('student').set("ghous")
+	
+	//firebase.database().ref('student').child("student1").set(student)
+	//two method slash yaa .child
+	//firebase.database().ref('student/student1').set(student)
+	
+	//with key  unique key
+	//firebase.database().ref('student').push(student)
+	
+	//object kai under object then key then data push  NESTED___________________________________
+	//firebase.database().ref('student').child("mystudent").push(student)
+	
+	
+	//push key banat ahai firebase multiple data
+	//firebase.database().ref('student').child("mystudent/text").push(student)
+	
+	
+	//random generate data manual 
+	
 	
 	//console.log(firebase.database)
 	//call function database  and .ref reference btata hai
@@ -141,7 +179,53 @@ function saveData(){
 		//.ref('student').set(student)
 	
 }
+//------------------------------------------DATA GET RETRIEVE=============================
+//data ko mangwaana data get-------------------------------------------------
+//doo method once aikhibaaar data laikeratahai page refresh per
+//on realtime data laatahai jubjub data update hota hai lakerdetahia
+//function getFirebaseData(){
+	//apni marzi ka dat mangwaana ho yaani jis keey ka
+	//firebase.database().ref('student/-MEsiL-TD0HKPHf-MQlF').once('value',function(data){
+	//once method
+	//firebase.database().ref('student').once('value',function(data){
+	//on method  value ki jaaga child_added ajyegaa yaani jub bi child added  ho data laker dedoo data khud atarehai ga without refreshpage
+	//firebase.database().ref('student').on('child_added',function(data){
+	
+	
+											
+											
+											
+											//if just onekey data  firebase.database().ref('student/-MEsf3mDstye9SE5Mfr1').once('value',function(data){
+		//console.log(data)
+		//data ko sahi  proper format mai get kerna data.val()call and all data get data retrieve 
+	
+		//console.log(data.val())
+	//})   //once two parameter 1arguments value 2 arguments function functaion(kai parametre mai data miljayegaa)
+	
+//}
+//getFirebaseData()
 
+//--------------------------------------DATA REMOVE==============================================
+//function removeFirebaseData(){
+//	//if object student remove
+//	firebase.database().ref('student').remove()
+//	//if key remove
+//	//firebase.database().ref('student/-MEsmJC2GR96lEEyKTck').remove()
+//	
+//}
+//removeFirebaseData()
+
+//000000000000000000000000000000000000000000000fortodo app mai button mai id mai key dedo then del ya edit
+//-----------------------------DATA EDIT=================================================
+function editFirebaseData(){
+firebase.database().ref('student/-MEsqKG-poEtDrJ8bTWN').set({
+	key:'-MEsqKG-poEtDrJ8bTWN',
+	name:"sadii",
+	roll:9090
+})	
+	
+}
+editFirebaseData()
 
 
 
