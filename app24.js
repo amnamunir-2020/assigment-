@@ -210,4 +210,60 @@
 // let student1=new School("Basit",1,"basitahmed@gmail.com")
 //     console.log(student1)
 
-//----FIREBASE AUTHENTICATION --------------------------------------------1:48 VIDEO
+//----FIREBASE AUTHENTICATION START
+
+
+//<!-- FIREBASE AUTHENTICATION FORM -->
+
+// SIGNUP FUNCTION-----------------------------------------------
+let signup=()=>{
+    let email=document.getElementById("email")
+    let password=document.getElementById("password")
+
+    //checkvalue
+    // console.log(email.value)
+    // console.log(password.value)
+
+    //Getstarted user sign
+
+    firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
+    .then((result)=>{
+
+        console.log(result)
+    })
+    
+    .catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        
+        console.log(errorMessage)
+      });
+
+}
+
+
+//LOGIN FUNCTION----------------------------------------
+let login=()=>{
+    let emaillogin=document.getElementById("login-email")
+    let passwordlogin=document.getElementById("login-password")
+
+//check value 
+// console.log(emaillogin.value)
+// console.log(passwordlogin.value)
+
+///Getstarted Signin Users
+
+firebase.auth().signInWithEmailAndPassword(emaillogin.value, passwordlogin.value)
+.then((result)=>{
+    console.log("User SignIn Successfully!")
+    console.log(result)
+})
+.catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    console.log(errorMessage)
+  });
+}
