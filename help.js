@@ -295,3 +295,76 @@
 //console.log(student1)
 //console.log(student2)
 
+
+
+//----helpdesk9----------------------------------------------------------
+
+// PROMISE
+// function getData(){
+
+// }
+
+//fetch function api sai get kernai kialia data    api kisior format mai data layegii
+
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   .then(response => response.json())
+//   .then(function(result){  //resolveans
+// console.log("result=>",result)
+//   })
+// .catch( function(error){   //error shoe no resolve if promise reject
+// console.log("error=>",error)
+// })
+
+//multiples jaga data chia hoo phir use kertaihai promise
+
+
+// function getData(){
+//   let promise=new Promise(function(resolve,reject){
+//     fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     .then(response => response.json())
+//     .then(function(result){   //resolveans
+//       resolve(result)
+  
+//     })
+//   .catch( function(error){   //error shoe no resolve if promise reject
+//     reject(error)
+//   })
+
+//   })
+//   promise.then(function(result){
+// console.log("result=>",result)
+//   })
+
+//   .catch(function(error){
+// console.log("error=>",error)
+//   }) 
+  
+// }
+
+// getData()
+
+//Database Firebase---------------------------
+function getData(){
+  let promise=new Promise(function(resolve,reject){
+  })
+    firebase.database().ref('/').on("child_added",function(data){
+console.log(data.val())
+
+    })
+    
+}
+
+//   promise.then(function(result){
+// console.log("result=>",result)
+//   })
+
+//   .catch(function(error){
+// console.log("error=>",error)
+//   }) 
+  
+// }
+
+//getData()
+
+
